@@ -46,7 +46,7 @@ jobs:
       - name: gobenchdata publish
         run: go run go.bobheadxi.dev/gobenchdata@v1 action
         env:
-          GITHUB_TOKEN: ${{ secrets.gh actions }}
+          GITHUB_TOKEN: ${{ secrets.GH_PROBA }}
           INPUT_PRUNE_COUNT: 0
           INPUT_PUBLISH: true
           INPUT_PUBLISH_BRANCH: gh-pages
