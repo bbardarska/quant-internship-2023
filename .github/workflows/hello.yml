@@ -1,9 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - bobi
+on: push
 
 jobs:
   test:
@@ -56,5 +53,4 @@ jobs:
       - name: prepareToCry
         run: go install go.bobheadxi.dev/gobenchdata@latest
       - name: CryForHelp
-        run: gobenchdata serve
-
+        run: gobenchdata web serve
